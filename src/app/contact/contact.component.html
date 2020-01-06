@@ -1,0 +1,57 @@
+<app-jumbotron></app-jumbotron>
+<div class="container">
+    <div class="whiteSpaceFix">
+        <h1>{{  'CONTACT.TITLE' | translate }}</h1>
+        <p>{{ 'CONTACT.CONTENT' | translate }}</p>
+        <hr>
+
+        <label>
+            {{ 'CONTACT.SELECT' | translate }}
+            <select #langSelect (change)="translate.use(langSelect.value)">
+                <option *ngFor="let lang of translate.getLangs()" [value]="lang" [selected]="lang === translate.currentLang">{{ lang }}</option>
+            </select>
+        </label>
+        <hr>
+
+        <div class="card">
+            <div class="card-body">
+                <form [formGroup]="contactForm" (ngSubmit)="onSaveForm()">
+                    <label for="name">{{ 'CONTACT.NAME' | translate }}</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      id="name"
+                      formControlName="enteredName">
+                      <p *ngIf="contactForm.get('enteredName').invalid && contactForm.get('enteredName').touched">{{ 'CONTACT.INVALIDNAME' | translate }}</p>
+
+                    <label for="email">{{ 'CONTACT.EMAIL' | translate }}</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      id="email"
+                      formControlName="enteredEmail">
+                      <p *ngIf="contactForm.get('enteredEmail').invalid && contactForm.get('enteredEmail').touched">{{ 'CONTACT.INVALIDEMAIL' | translate }}</p>
+
+                    <label for="name">{{ 'CONTACT.MESSAGE' | translate }}</label>
+                    <input 
+                      type="text" 
+                      class="form-control submissionField"
+                      id="message"
+                      formControlName="enteredMessage">
+                      <p *ngIf="contactForm.get('enteredMessage').invalid && contactForm.get('enteredMessage').touched">{{ 'CONTACT.INVALIDMESSAGE' | translate }}</p>
+                    <br>
+                    <button 
+                      class="btn btn-primary"
+                      type="submit"
+                      [disabled]="!contactForm.valid || formSubmitted">{{ 'CONTACT.SUBMIT' | translate }}
+                    </button>
+                    <div *ngIf="!!formSubmitted">
+                        {{ 'CONTACT.FORMSUBMITTEDMESSAGE' | translate }}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<app-jumbotron></app-jumbotron>
+<div class="containerContact"></div>

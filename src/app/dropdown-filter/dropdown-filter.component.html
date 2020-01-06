@@ -1,0 +1,14 @@
+<select id="select" 
+        [(ngModel)]="selectedDropdownValue"  
+        (ngModelChange)="onSelect(selectedDropdownValue)" 
+        class="text-center shadow p-3 mb-5 bg-white rounded inputWidth">
+    
+    <option value="all">
+        All
+    </option>
+
+    <option *ngFor="let id of ids" [value]="id">
+        {{ id }}
+    </option>
+
+</select>

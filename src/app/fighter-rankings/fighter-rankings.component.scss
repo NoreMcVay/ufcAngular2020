@@ -1,0 +1,28 @@
+.whiteSpaceFix {
+    padding-top: 110px;
+    padding-bottom: 248px;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+button:focus { 
+    outline: none; 
+}
+
+i.fa-plus-square {
+    color: black;   
+}
+
+.flagSize {
+    height: 20px;
+    width: 30px;
+}
+
+.my-pagination::ng-deep .ngx-pagination .current {
+    background: black  !important;
+    color: rgb(172, 172, 172);
+    border: 1px red solid;  
+}

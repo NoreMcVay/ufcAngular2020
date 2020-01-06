@@ -1,0 +1,34 @@
+<app-jumbotron></app-jumbotron>
+<div class="container fixWhitespace">
+    <form [formGroup]="fighterForm">
+        <div class="input-group">
+            <input formControlName="search" placeholder="Search Fighter" type="text">
+            <div class="input-group-append">
+              <button 
+                class="btn btn-secondary" 
+                type="button">
+                <i class="fa fa-search"></i>
+             </button>
+            </div>
+        </div>
+    </form>	
+    <hr>
+    <div class="row">
+        <div 
+          class="col-lg-3 col-md-4 col-sm-6 cardSpacing" 
+          *ngFor="let fighter of fighterData">
+            <div class="card h-100 shadow p-3 mb-5 bg-white rounded">
+                <img [src]="fighter.imagePath" class="img-fluid card-img-top">
+                <div class="card-body">
+                    <div class="card-text text-center">
+                        <button 
+                            class="btn btn-md btn btn-dark" 
+                            (click)="open(fighter)">Highlights
+                        </button>
+                        <p>{{ fighter.fullName }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

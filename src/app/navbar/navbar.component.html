@@ -1,0 +1,78 @@
+   <div *ngIf="router.url !== '/login' && router.url !== '/register'">
+   <nav class="navbar navbar-expand-lg navbar-dark navbar-full" style="background-color: black">
+      <div *ngIf="router.url !== '/home'">
+        <h5>MMA APP</h5>
+      </div>
+
+      <div *ngIf="router.url === '/home'">
+        <div class="input-group inputMargin">
+            <input
+              #inputValRef
+              type="text" 
+              class="form-control" 
+              placeholder="search name..."
+              (keydown.enter)="inputValueEntered($event)">
+            <div class="input-group-append">
+              <button 
+                class="btn btn-secondary" 
+                type="button"
+                (click)="onClickFireSearch(inputValRef)">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+        </div>
+      </div>
+
+      <button class="navbar-toggler custom-toggler" type="button" (click)="toggleNavbar()">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" 
+                routerLink="/home"
+                [ngClass]="{'router-link-active': router.url === '/home'}">
+                <h6>Home</h6>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" 
+                routerLink="/fighter-rankings"
+                [ngClass]="{'router-link-active': router.url === '/fighter-rankings'}">
+                <h6>Rankings</h6>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" 
+                routerLink="/contact"
+                [ngClass]="{'router-link-active': router.url === '/contact'}">
+                <h6>Contact</h6>
+            </a>
+          </li>
+
+          <li class="nav-item"> 
+            <a class="nav-link" 
+                routerLink="/practise" 
+                [ngClass]="{'router-link-active': router.url === '/practise'}">
+                <h6>Switchmap Filter</h6> 
+            </a>
+          </li> 
+          <div *ngIf="router.url !== '/login' && router.url !== '/register' && router.url !== '/login?returnUrl=%2Fhome' && router.url !== '/login?returnUrl=%2Ffighter-rankings' && router.url !== '/login?returnUrl=%2Fcontact' && router.url !== '/login?returnUrl=%2Fpractise'">
+            <li class="nav-item">
+                <div class="usernameCircle">
+                    <a
+                      (click)="openLogoutModal()" class="userNameColor">
+                      <h5>{{ currentUser.firstName.substr(0,1) | uppercase }}{{ currentUser.lastName.substr(0,1) | uppercase }}</h5>
+                    </a>
+                </div>
+            </li>
+          </div>
+        </ul> 
+      </div>
+
+    </nav>
+    </div>
+      

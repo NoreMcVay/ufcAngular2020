@@ -1,0 +1,16 @@
+{
+    "CONTACT": {
+      "TITLE": "Contact Us Below!",
+      "SELECT": "Change Language!",
+      "CONTENT": "Please feel free to leave us a message below. We will get back in touch with you as soon as possible. Thanks!",
+      "NAME": "Name",
+      "EMAIL": "E-Mail",
+      "MESSAGE": "Message",
+      "FORMSUBMITTEDMESSAGE": "Form Submitted!",
+      "INVALIDNAME": "Please Enter Valid Name.",
+      "INVALIDEMAIL": "Please Enter Valid Email.",
+      "INVALIDMESSAGE": "Please Enter Valid Message.",
+      "SUBMIT": "SUBMIT"
+    }
+  }
+  

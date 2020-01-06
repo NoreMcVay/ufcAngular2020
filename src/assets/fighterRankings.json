@@ -1,0 +1,82 @@
+[
+    {
+        "First": "Jon",
+        "Last": "Jones",
+        "Country": "America",
+        "id": 1,
+        "Record": " (25-1) WON 25 (By knockout - 10, By Submission - 6) LOST 1 (DQ)",
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "First": "Khabib",
+        "Last": "Nurmagomedov",
+        "Country": "Russia",
+        "id": 2,
+        "Record": "(28-0) WON 28(By K.O - 8, By Submission - 10) LOST 0",
+        "Flags": "assets/images/country-flags/russia.jpg"
+    },
+    {
+        "First": "Tony",
+        "Last": "Ferguson",
+        "Country": "America",
+        "id": 3,
+        "Record": "(26-3) WON 26(By K.O - 12, By Submission - 8) LOST 3",
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "First": "Stipe",
+        "Last": "Miocic",
+        "Country": "USA",
+        "id": 4,
+        "Record": "(19-3) WON 19(By K.O - 15) LOST 3",
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "First": "Amanda",
+        "Last": "Nunes",
+        "Country": "Brazil",
+        "id": 5,
+        "Record": "(18-4) WON 18(By K.O - 13, By Submission - 3) LOST 4",
+        "Flags": "assets/images/country-flags/brazil.jpg"
+    },
+    {
+        "First": "Daniel",
+        "Last": "Cormier",
+        "Country": "America",
+        "id": 6,
+        "Record": "(22-2) WON 22(By K.O - 10, By Submission - 5) LOST 2 ( and 1 No Contest)",
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "First": "Kamaru",
+        "Last": "Usman",
+        "Country": "Nigeria",
+        "id": 7,
+        "Record": "(16-1) WON 16(By K.O - 7, By Submission - 1) LOST 1",
+        "Flags": "assets/images/country-flags/nigeria.jpg"
+    },
+    {
+        "First": "Valentina",
+        "Last": "Shevchenko",
+        "Country": "Kyrgyzstan",
+        "id": 8,
+        "Record": "(18-3) WON 18(By K.O - 5, By Submission - 7) LOST 3",
+        "Flags": "assets/images/country-flags/kyrgyzstan.jpg"
+    },
+    {
+        "First": "Israel",
+        "Last": "Adesanya",
+        "Country": "Nigeria",
+        "id": 9,
+        "Record": "(18-0) WON 18(By K.O - 14) LOST 0",
+        "Flags": "assets/images/country-flags/nigeria.jpg"
+    }, 
+    {
+        "First": "Jorge",
+        "Last": "Masvidal",
+        "Country": "America",
+        "id": 10,
+        "Record": "(35-13) WON 35(By K.O - 16, By Submission - 2) LOST 13",
+        "Flags": "assets/images/country-flags/usa.jpg"
+    }
+]

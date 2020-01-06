@@ -1,0 +1,115 @@
+body {
+    background-color: #3E4649;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2 {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+button:focus { 
+    outline: none; 
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.form-control {
+    padding-left: 2.375rem;
+}
+
+// CHANGING HAMURGER ICON COLOUR //
+.custom-toggler.navbar-toggler {
+    border-color: rgb(162, 162, 162);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(162, 162, 162)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+// CHANGING HAMURGER ICON COLOUR ENDS //
+
+
+// CHANGING INPUT FIELD COLOUR //
+input[type="text"], textarea {
+    background-color : #2d2d2d; 
+    border-color: #2d2d2d;
+    color: grey; 
+}
+.btn-secondary { // search button color change
+    background-color: #000;
+    border-color: #2d2d2d;
+}
+i.fa-search {
+    color: rgb(152, 40, 40);
+}
+// CHANGING INPUT FIELD COLOUR ENDS//
+
+a:hover {
+    background-color: black;
+}
+
+li.nav-item {
+    font-size: 20px;
+    padding: 3px 0px 0px 3px;
+}
+
+.router-link-active {
+    background-color: rgb(170, 170, 170);
+}
+
+.usernameCircle {
+    border-radius: 50%;
+    height: 55px;
+    padding: 13px;
+    color: aliceblue;
+    border: 3px solid rgb(242, 79, 79);
+    background-color: #aa2828;
+    text-align: center;
+    font: 22px Arial, sans-serif;
+    margin-left: 8px;
+}
+
+a:link {
+    text-decoration: none;
+    background-color: #2d2d2d;
+    color: white;
+    text-decoration: none;
+  }
+
+.userNameColor {
+    color: white;
+}
+
+li {
+    cursor: pointer;
+}
+
+.inputMargin {
+    margin-left: 5px;
+}
+
+@media only screen and (max-width: 991px) {
+    .usernameCircle {
+        border-radius: 50%;
+        height: 5px;
+        border: 3px solid #aa2828;
+        text-align: center;
+        font: 22px Arial, sans-serif;
+        margin-left: 8px;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 6px;
+        padding-bottom: 6px;
+    }
+  }

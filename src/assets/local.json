@@ -1,0 +1,223 @@
+[
+    {
+        "fullName": "GEORGES ST PIERRE",
+        "nickname": "Rush",
+        "country": "Canada",
+        "age": 38,
+        "weight": "Welterweight",
+        "imagePath":"assets/images/fighter-cards/0.jpg",
+        "videoPath":"https://www.youtube.com/embed/gAI160sHcT8",
+        "id": 0,
+        "Flags": "assets/images/country-flags/canada.jpg"
+    },
+    {
+        "fullName": "JON JONES",
+        "nickname": "Bones",
+        "country": "USA",
+        "age": 32,
+        "weight": "Light-Heavyweight",
+        "imagePath":"assets/images/fighter-cards/1.jpg",
+        "videoPath":"https://www.youtube.com/embed/ebeQBYvWKsw",
+        "id": 1,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "KHABIB NURMAGOMEDOV",
+        "nickname": "Eagle",
+        "country": "Russia",
+        "age": 31,
+        "weight": "Lightweight",
+        "imagePath":"assets/images/fighter-cards/2.jpg",
+        "videoPath":"https://www.youtube.com/embed/jN07H_jL_AM",
+        "id": 2,
+        "Flags": "assets/images/country-flags/russia.jpg"
+
+    },
+    {
+        "fullName": "ANDERSON SILVA",
+        "nickname": "Spider",
+        "country": "Brazil",
+        "age": 44,
+        "weight": "Middleweight",
+        "imagePath":"assets/images/fighter-cards/13.jpg",
+        "videoPath":"https://www.youtube.com/embed/c96FlEr1V20",
+        "id": 3,
+        "Flags": "assets/images/country-flags/brazil.jpg"
+    },
+    {
+        "fullName": "CONOR MCGREGOR",
+        "nickname": "Notorius",
+        "country": "Republic of Ireland",
+        "age": 31,
+        "weight": "Lightweight/Welterweight",
+        "imagePath":"assets/images/fighter-cards/3.jpg",
+        "videoPath":"https://www.youtube.com/embed/WiksrZBtGzc",
+        "id": 4,
+        "Flags": "assets/images/country-flags/ireland.jpg"
+    },
+    {
+        "fullName": "TONY FERGUSON",
+        "nickname": "El Cucuy",
+        "country": "USA",
+        "age": 35,
+        "weight": "Lightweight",
+        "imagePath":"assets/images/fighter-cards/15.jpg",
+        "videoPath":"https://www.youtube.com/embed/o8Mb4eOroNo",
+        "id": 5,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "AMANDA NUNES",
+        "nickname": "The Lioness",
+        "country": "Brazil",
+        "age": 31,
+        "weight": "Bantamweight/Featherweight",
+        "imagePath":"assets/images/fighter-cards/4.jpg",
+        "videoPath":"https://www.youtube.com/embed/CEA7fasR4pg",
+        "id": 6,
+        "Flags": "assets/images/country-flags/brazil.jpg"
+    },
+    {
+        "fullName": "VALENTINA SHEVCHENKO",
+        "nickname": "Bullet",
+        "country": "Kyrgyzstan",
+        "age": 31,
+        "weight": "Flyweight",
+        "imagePath":"assets/images/fighter-cards/5.jpg",
+        "videoPath":"https://www.youtube.com/embed/hahc6zcWx0s",
+        "id": 7,
+        "Flags": "assets/images/country-flags/kyrgyzstan.jpg"
+    },
+    {
+        "fullName": "RONDA ROUSEY",
+        "nickname": "Rowdy",
+        "country": "USA",
+        "age": 32,
+        "weight": "Bantamweight",
+        "imagePath":"assets/images/fighter-cards/6.jpg",
+        "videoPath":"https://www.youtube.com/embed/hViC5DQOcP4",
+        "id": 8,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "ROSE NAMAJUNAS",
+        "nickname": "Thug Rose",
+        "country": "USA",
+        "age": 27,
+        "weight": "Strawweight",
+        "imagePath":"assets/images/fighter-cards/18.jpg",
+        "videoPath":"https://www.youtube.com/embed/d08MR_Rni8o",
+        "id": 9,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "FRANCIS NGANNOU",
+        "nickname": "The Predator",
+        "country": "Cameroon",
+        "age": 33,
+        "weight": "Heavyweight",
+        "imagePath":"assets/images/fighter-cards/14.jpg",
+        "videoPath":"https://www.youtube.com/embed/jLqyRdwDzBQ",
+        "id": 10,
+        "Flags": "assets/images/country-flags/cameroon.jpg"
+    },
+    {
+        "fullName": "DONALD CERRONE",
+        "nickname": "Cowboy",
+        "country": "USA",
+        "age": 36,
+        "weight": "Lightweight/Welterweight",
+        "imagePath":"assets/images/fighter-cards/17.jpg",
+        "videoPath":"https://www.youtube.com/embed/9TYIRMju4Es",
+        "id": 11,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "DEMETRIOUS JOHNSON",
+        "nickname": "Mighty Mouse",
+        "country": "USA",
+        "age": 33,
+        "weight": "Flyweight",
+        "imagePath":"assets/images/fighter-cards/7.jpg",
+        "videoPath":"https://www.youtube.com/embed/AZr6g1GdTdA",
+        "id": 12,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "STIPE MIOCIC",
+        "nickname": "n/a",
+        "country": "USA",
+        "age": 37,
+        "weight": "Heavyyweight",
+        "imagePath":"assets/images/fighter-cards/8.jpg",
+        "videoPath":"https://www.youtube.com/embed/WmJYUQDxtio",
+        "id": 13,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "DANIEL CORMIER",
+        "nickname": "DC",
+        "country": "USA",
+        "age": 40,
+        "weight": "Light-Heavyweight/Heavyweight",
+        "imagePath":"assets/images/fighter-cards/10.jpg",
+        "videoPath":"https://www.youtube.com/embed/hljnpulVFts",
+        "id": 14,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "THIAGO SANTOS",
+        "nickname": "Marreta",
+        "country": "Brazil",
+        "age": 35,
+        "weight": "Light-Heavyweight",
+        "imagePath":"assets/images/fighter-cards/16.jpg",
+        "videoPath":"https://www.youtube.com/embed/aPScv2t4Asc",
+        "id": 15,
+        "Flags": "assets/images/country-flags/brazil.jpg"
+    },
+    {
+        "fullName": "HENRY CEJUDO",
+        "nickname": "The Messenger",
+        "country": "USA",
+        "age": 32,
+        "weight": "Flyweight/Bantamweight",
+        "imagePath":"assets/images/fighter-cards/9.jpg",
+        "videoPath":"https://www.youtube.com/embed/5TEeryUKA38",
+        "id": 16,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "TATIANA SUAREZ",
+        "nickname": "n/a",
+        "country": "USA",
+        "age": 29,
+        "weight": "Strawweight",
+        "imagePath":"assets/images/fighter-cards/19.jpg",
+        "videoPath":"https://www.youtube.com/embed/MPCUXA45xVE",
+        "id": 17,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "JORGE MASVIDAL",
+        "nickname": "Gamebred",
+        "country": "USA",
+        "age": 35,
+        "weight": "Welterweight",
+        "imagePath":"assets/images/fighter-cards/11.jpg",
+        "videoPath":"https://www.youtube.com/embed/izLCerpcPYU",
+        "id": 18,
+        "Flags": "assets/images/country-flags/usa.jpg"
+    },
+    {
+        "fullName": "ISRAEL ADESANYA",
+        "nickname": "The Last Stylebender",
+        "country": "Nigeria/New-Zealand",
+        "age": 30,
+        "weight": "Middleweight",
+        "imagePath":"assets/images/fighter-cards/12.jpg",
+        "videoPath":"https://www.youtube.com/embed/mu07PO1ac5g",
+        "id": 19,
+        "Flags": "assets/images/country-flags/nigeria.jpg"
+    }
+]

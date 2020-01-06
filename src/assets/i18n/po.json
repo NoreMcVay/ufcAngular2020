@@ -1,0 +1,15 @@
+{
+    "CONTACT": {
+      "TITLE": "Skontaktuj się z nami poniżej!",
+      "SELECT": "Zmień język!",
+      "CONTENT": "Prosimy zostawić nam wiadomość poniżej. Skontaktujemy się z Tobą jak najszybciej. Dziękuję Ci!",
+      "NAME": "Imię",
+      "EMAIL": "Email",
+      "MESSAGE": "Wiadomość",
+      "FORMSUBMITTEDMESSAGE": "Formularz przesłany!",
+      "INVALIDNAME": "Podaj prawidłową nazwę.",
+      "INVALIDEMAIL": "Proszę podać poprawny adres e-mail.",
+      "INVALIDMESSAGE": "Wpisz poprawną wiadomość.",
+      "SUBMIT": "ZATWIERDŹ"
+    }
+  }

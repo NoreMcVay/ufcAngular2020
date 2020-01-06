@@ -1,0 +1,35 @@
+    <app-jumbotron></app-jumbotron>
+  
+    <div class="container containerPadding text-center">
+        <p>Filter Cards By ID:</p>
+        <app-dropdown-filter (emittingValueFromDropdownComp)="getFilteredResult($event)"></app-dropdown-filter>
+        <div class="row">
+            <div 
+              class="col-lg-3 col-md-4 col-sm-6 cardSpacing" 
+              *ngFor="let data of myFilteredData | filter: navInputSearchValue: 'fullName'">
+                <div class="card h-100 shadow p-3 mb-5 bg-white rounded">
+                    <img [src]="data.imagePath" class="img-fluid card-img-top">
+                    <div class="card-body">
+                        <div class="card-text text-center">
+                            <button 
+                                class="btn btn-md btn btn-dark" 
+                                (click)="open(data)">Highlights
+                            </button>
+                            <p>ID: {{ data.id }}</p>
+                            <p><img [src]="data.Flags" class="flagSize"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="registeredUsersBox">
+            <h3>All registered users:</h3>
+            <ol>
+                <li *ngFor="let user of users">
+                    {{user.username}} ({{user.firstName}} {{user.lastName}})
+                    - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
+                </li>
+            </ol>
+        </div>
+    </div>

@@ -1,0 +1,22 @@
+<div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">{{title}}</h4>
+            <button type="button" class="btn btn-outline-dark close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <ng-content></ng-content>
+                <p><strong>Name: </strong>{{ fighterData.fullName }}</p>
+                <p *ngIf="fighterData.nickname !== 'n/a'"><strong>Nickname: </strong>'{{ fighterData.nickname }}'</p>
+                <p><strong>Country:</strong>{{ fighterData.country }}</p>
+                <p><strong>Age: </strong>{{ fighterData.age }}</p>
+                <p><strong>Division: </strong>{{ fighterData.weight }}</p>
+                <iframe [src]="fighterData.videoPath | safe" class="videoClass"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+          </div>
+        </div>
+</div>
