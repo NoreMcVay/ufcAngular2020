@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FetchingDataService } from '../Services/fetchingDataService.service';
 import { NavbarSearchResultService } from '../Services/navbarSearchResultService.service';
-import { map } from 'rxjs/operators';
 
 import { User } from '../_models';
 import { UserService, AuthenticationService } from '../_services';
@@ -18,7 +17,6 @@ export class HomeComponent implements OnInit, OnDestroy {
   myData = [];
   myFilteredData = [];
   navInputSearchValue = '';
-  deletedArray = [];
 
   currentUser: User;
   currentUserSubscription: Subscription;
