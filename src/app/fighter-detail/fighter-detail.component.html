@@ -1,0 +1,18 @@
+<app-jumbotron></app-jumbotron>
+<div class="container text-center">
+    <div *ngFor="let f of fighter">
+        <div class="card text-center">
+            <h1><strong>{{ f.fullName }}</strong></h1>
+            <h5 *ngIf="f.nickname !== 'n/a'">"{{ f.nickname }}"</h5>
+            <p><img [src]="f.Flags" class="img-fluid flagSize"></p>
+            <p> <button 
+                    class="btn btn-md btn btn-dark" 
+                    (click)="open(f)">Watch Highlights
+                </button>
+            </p>
+            <!-- <p>id from service = {{ idFromService }}</p> -->
+            <img [src]="f.imagePath" class="img-fluid fighterImage">
+        </div>
+    </div>
+</div>
+

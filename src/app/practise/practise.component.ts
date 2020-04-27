@@ -36,8 +36,6 @@ export class PractiseComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log('path: ' + this.router.url);
-
     this.fetchDataService.getData().subscribe(data => {
       this.fighterData = data;
     });

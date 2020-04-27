@@ -1,6 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { FighterCardModalComponent } from '../Modals/fighter-card-modal/fighter-card-modal.component';
 import { FetchingDataService } from '../Services/fetchingDataService.service';
 import { NavbarSearchResultService } from '../Services/navbarSearchResultService.service';
 import { map } from 'rxjs/operators';
@@ -20,6 +18,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   myData = [];
   myFilteredData = [];
   navInputSearchValue = '';
+  deletedArray = [];
 
   currentUser: User;
   currentUserSubscription: Subscription;
@@ -27,7 +26,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   constructor(private fetchingDataService: FetchingDataService,
               private navbarSearchService: NavbarSearchResultService,
-              private modalService: NgbModal,
               private authenticationService: AuthenticationService,
               private userService: UserService,
               private router: Router) {
@@ -37,25 +35,25 @@ export class HomeComponent implements OnInit, OnDestroy {
               });
   }
 
-  logout() {
-    this.authenticationService.logout();
-    this.router.navigate(['/login']);
-  }
 
   ngOnInit() {
     this.loadAllUsers();
-    this.fetchingDataService.getData().pipe(
-      map((fighterArray$) => fighterArray$.map(
-        (fighter: any) => {
-          if (fighter.country === 'Republic of Ireland') {
-            fighter.country = 'Ireland';
-          } else {
-            fighter.country = fighter.country;
-          }
-          return fighter;
-        }
-      ))
-    ).subscribe(data => {
+    this.fetchingDataService.getData()
+    // .pipe(
+    //   map(
+    //     (fighters) => fighters.map((fighter: any) => {
+    //       return {
+    //         fullName: 'VALENTINA SHEVCHENKO',
+    //         nickname: 'BULLET',
+    //         id: 7,
+    //         imagePath: 'assets/images/fighter-cards/5.jpg',
+    //         videoPath: 'https://www.youtube.com/embed/hahc6zcWx0',
+    //         Flags: 'assets/images/country-flags/kyrgyzstan.jpg'
+    //       };
+    //     })
+    //   )
+    // )
+    .subscribe(data => {
       this.myData = data;
       this.myFilteredData = data;
     });
@@ -77,11 +75,6 @@ export class HomeComponent implements OnInit, OnDestroy {
     }
   }
 
-  open(data) {
-    const modalRef = this.modalService.open(FighterCardModalComponent);
-    modalRef.componentInstance.title =  data.fullName.toUpperCase();
-    modalRef.componentInstance.fighterData = data;
-  }
 
   ngOnDestroy() {
     // unsubscribe to ensure no memory leaks
@@ -99,5 +92,16 @@ export class HomeComponent implements OnInit, OnDestroy {
           this.users = users;
       });
   }
+
+  viewFighterProfile(fighterId) {
+    this.fetchingDataService.idNumberValue.next(fighterId);
+    console.log('fighter id from home component', fighterId);
+    this.router.navigate(['fighterProfile', fighterId]);
+  }
+
+  deleteFighter(fighterId) {
+    this.myFilteredData = this.myFilteredData.filter((fighter) => fighter.id !== fighterId);
+  }
+
 
 }

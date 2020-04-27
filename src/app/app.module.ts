@@ -34,6 +34,7 @@ import { fakeBackendProvider } from './_helpers';
 import { AlertComponent } from './_components';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { LogoutMessageModalComponent } from './Modals/logout-message-modal/logout-message-modal.component';
+import { FighterDetailComponent } from './fighter-detail/fighter-detail.component';
 
 export function HttpLoaderFactory(httpClient: HttpClient) {
   return new TranslateHttpLoader(httpClient);
@@ -57,7 +58,8 @@ export function HttpLoaderFactory(httpClient: HttpClient) {
     AlertComponent,
     LoginComponent,
     RegisterComponent,
-    LogoutMessageModalComponent
+    LogoutMessageModalComponent,
+    FighterDetailComponent
   ],
   entryComponents: [
     FighterCardModalComponent,

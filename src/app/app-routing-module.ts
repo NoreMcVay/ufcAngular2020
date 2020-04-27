@@ -8,6 +8,7 @@ import { PractiseComponent } from './practise/practise.component';
 import { AuthGuard } from './_guards';
 import { LoginComponent } from './login';
 import { RegisterComponent } from './register';
+import { FighterDetailComponent } from './fighter-detail/fighter-detail.component';
 
 
 
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
     { path: 'contact', component: ContactComponent, canActivate: [AuthGuard] },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
+    { path: 'fighterProfile/:fightId', component: FighterDetailComponent },
     { path: '**', redirectTo: 'home' }
 ];
 

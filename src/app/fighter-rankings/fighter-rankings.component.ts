@@ -24,8 +24,6 @@ export class FighterRankingsComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log('path: ' + this.router.url);
-
     this.getFighterRankings.getData().pipe(
       map((rankings$) => rankings$.map(
         (fighter: any) => {

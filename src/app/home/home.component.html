@@ -7,16 +7,19 @@
             <div 
               class="col-lg-3 col-md-4 col-sm-6 cardSpacing" 
               *ngFor="let data of myFilteredData | filter: navInputSearchValue: 'fullName'">
-                <div class="card h-100 shadow p-3 mb-5 bg-white rounded">
-                    <img [src]="data.imagePath" class="img-fluid card-img-top">
+                <div class="card h-100 shadow-lg rounded" style="background-color: black; color:rgb(152, 152, 152)">
+                    <img [src]="data.Flags" class="flagSize">
+                    <button (click)="viewFighterProfile(data.id)" class="btn btn-danger imageInsideButton">
+                        <img [src]="data.imagePath" class="img-fluid card-img-top fighterImage">
+                    </button>
                     <div class="card-body">
                         <div class="card-text text-center">
+                            <p> <strong>ID: {{ data.id }}</strong></p>
                             <button 
-                                class="btn btn-md btn btn-dark" 
-                                (click)="open(data)">Highlights
+                               (click)="deleteFighter(data.id)"
+                               class="btn btn-danger">
+                               Delete
                             </button>
-                            <p>ID: {{ data.id }}</p>
-                            <p><img [src]="data.Flags" class="flagSize"></p>
                         </div>
                     </div>
                 </div>
